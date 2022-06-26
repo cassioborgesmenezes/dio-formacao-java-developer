@@ -39,5 +39,35 @@ public class Operadores {
 
 		concatenacao = "1"+(1+1+1);
 		logger.info(concatenacao);
+
+		int numero = 5;
+		
+		//Imprimindo o numero negativo
+		System.out.println(- numero);
+
+		//incrementando numero em mais 1 numero, imprime 6
+		numero++;
+		System.out.println(numero);
+
+		//incrementando numero em mais 1 numero, imprime 7
+		System.out.println(numero++);// ops algo de errado não está certo
+
+		System.out.println(numero);// agora sim, numero virou 7
+
+		//ordem de precedencia conta aqui
+		System.out.println(++numero);
+
+		boolean verdadeiro = true;
+
+		System.out.println("Inverteu " + !verdadeiro);
+
+		// Operador ternario
+		int a, b;
+
+		a = 5;
+		b = 6;
+
+		String resultado = (a==b) ? "verdadeiro" : "falso";
+		logger.info(resultado);
 	}
 }
