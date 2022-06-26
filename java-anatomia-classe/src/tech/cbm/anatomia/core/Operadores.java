@@ -1,6 +1,10 @@
 package tech.cbm.anatomia.core;
 
+import java.util.logging.Logger;
+
 public class Operadores {
+	private static Logger logger = Logger.getLogger("Operadores");
+
 	// atribuicoes
 	String nome = "GLEYSON";
 	int idade = 22;
@@ -19,21 +23,21 @@ public class Operadores {
 
 	public static void main(String[] args) {
 		String concatenacao ="?";
-		System.out.println(concatenacao);
+		logger.info(concatenacao);
 
 		concatenacao = 1+1+1+"1";
-		System.out.println(concatenacao);
+		logger.info(concatenacao);
 
 		concatenacao = 1+"1"+1+1;
-		System.out.println(concatenacao);
+		logger.info(concatenacao);
 
 		concatenacao = 1+"1"+1+"1";
-		System.out.println(concatenacao);
+		logger.info(concatenacao);
 
 		concatenacao = "1"+1+1+1;
-		System.out.println(concatenacao);
+		logger.info(concatenacao);
 
 		concatenacao = "1"+(1+1+1);
-		System.out.println(concatenacao);
+		logger.info(concatenacao);
 	}
 }
