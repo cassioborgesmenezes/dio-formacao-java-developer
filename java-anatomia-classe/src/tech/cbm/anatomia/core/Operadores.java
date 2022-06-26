@@ -69,5 +69,22 @@ public class Operadores {
 
 		String resultado = (a==b) ? "verdadeiro" : "falso";
 		logger.info(resultado);
+
+		// Operadores Relacionais
+		int numero1 = 1;
+        int numero2 = 2;
+		boolean simNao = numero1 == numero2;
+
+		logger.info("numero1 eh igual ao numero2? " + simNao);
+		
+		simNao = numero1 != numero2;
+		logger.info("numero1 eh diferente de numero2? " + simNao);
+
+		simNao = numero1 > numero2;
+		logger.info("numero1 eh maior que numero2? " + simNao);
+
+		simNao = numero1 < numero2;
+		logger.info("numero1 eh menor que numero2? " + simNao);
+
 	}
 }
